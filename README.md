@@ -129,8 +129,8 @@ Specific commands the user will need to run to download the playbook, update the
   - copy metricbeat-config.yml file to /etc/ansible/files/
 	
 - Run playbook for filebeat:
-  -ansible-playbook /etc/ansible/roles/filebeat-playbook.yml
-  -ansible-playbook /etc/ansible/roles/metricbeat-config.yml
+  - ansible-playbook /etc/ansible/roles/filebeat-playbook.yml
+  - ansible-playbook /etc/ansible/roles/metricbeat-config.yml
 	
 - Open Kibana in browser:
   - http://[your.ELK-VM.External.IP]:5601/app/kibana
