@@ -47,7 +47,7 @@ Only the Jump-Box-Provisioner machine can accept connections from the Internet. 
 - 0.0.0.0 = My personal workstation
 
 Machines within the network can only be accessed by Jump-Box-Provisioner Machine.
-- The Elk machine also allowed my personal workstation ip:0.0.0.0 though port 5601._
+- The Elk machine also allowed my personal workstation ip:0.0.0.0 though port 5601.
 
 A summary of the access policies in place can be found in the table below.
 
@@ -80,11 +80,11 @@ This ELK server is configured to monitor the following machines:
 
 We have installed the following Beats on these machines:
 - Filebeat
-  -[filebeats-playbook.yml](https://github.com/gibby430EN/Elk-Stack-Project/blob/406aaf08734e1ba97f360f12179a905d7d269358/Ansible/Filebeats-playbook.yml)
-  -[filebeat-config.yml](https://github.com/gibby430EN/Elk-Stack-Project/blob/406aaf08734e1ba97f360f12179a905d7d269358/Ansible/filebeat-config.yml)
+  - [filebeats-playbook.yml](https://github.com/gibby430EN/Elk-Stack-Project/blob/406aaf08734e1ba97f360f12179a905d7d269358/Ansible/Filebeats-playbook.yml)
+  - [filebeat-config.yml](https://github.com/gibby430EN/Elk-Stack-Project/blob/406aaf08734e1ba97f360f12179a905d7d269358/Ansible/filebeat-config.yml)
 - Metricbeat
-  -[metricbeat-playbook.yml](https://github.com/gibby430EN/Elk-Stack-Project/blob/406aaf08734e1ba97f360f12179a905d7d269358/Ansible/metricbeat-playbook.yml)
-  -[metricbeat-config.yml](https://github.com/gibby430EN/Elk-Stack-Project/blob/406aaf08734e1ba97f360f12179a905d7d269358/Ansible/metricbeat-config.yml)
+  - [metricbeat-playbook.yml](https://github.com/gibby430EN/Elk-Stack-Project/blob/406aaf08734e1ba97f360f12179a905d7d269358/Ansible/metricbeat-playbook.yml)
+  - [metricbeat-config.yml](https://github.com/gibby430EN/Elk-Stack-Project/blob/406aaf08734e1ba97f360f12179a905d7d269358/Ansible/metricbeat-config.yml)
 
 These Beats allow us to collect the following information from each machine:
 - Filebeat collects and forwards log data from the web machines it is installed on and sends the data to the Elk stack for processing using elasticsearch. The information in this case is viewed through Kibana.
