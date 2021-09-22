@@ -2,7 +2,7 @@
 
 The files in this repository were used to configure the network depicted below.
 
-![Newtwork Diagram](https://github.com/gibby430EN/Elk-Stack-Project/blob/6371ae38a9c76ccfc1353b7160112ea0a4528434/Diagrams/Project1DiagramDark.jpg)
+![Newtwork Diagram](https://github.com/gibby430EN/Elk-Stack-Project1/blob/0bdde45f4ace267ae6ac62057a42ff0e5cd15d82/Diagrams/Project1DiagramDark.jpg)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to recreate the deployment pictured above.
 
@@ -71,7 +71,7 @@ The playbook implements the following tasks:
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-![docker_ps_run](https://github.com/gibby430EN/Elk-Stack-Project/blob/406aaf08734e1ba97f360f12179a905d7d269358/Images/docker_ps_run.jpg)
+![docker_ps_run](https://github.com/gibby430EN/Elk-Stack-Project1/blob/0bdde45f4ace267ae6ac62057a42ff0e5cd15d82/Images/docker_ps_run.jpg)
 
 ## Target Machines & Beats
 This ELK server is configured to monitor the following machines:
@@ -80,20 +80,20 @@ This ELK server is configured to monitor the following machines:
 
 We have installed the following Beats on these machines:
 - Filebeat
-  - [filebeats-playbook.yml](https://github.com/gibby430EN/Elk-Stack-Project/blob/406aaf08734e1ba97f360f12179a905d7d269358/Ansible/Filebeats-playbook.yml)
-  - [filebeat-config.yml](https://github.com/gibby430EN/Elk-Stack-Project/blob/406aaf08734e1ba97f360f12179a905d7d269358/Ansible/filebeat-config.yml)
+  - [filebeats-playbook.yml](https://github.com/gibby430EN/Elk-Stack-Project1/blob/0bdde45f4ace267ae6ac62057a42ff0e5cd15d82/Ansible/Filebeats-playbook.yml)
+  - [filebeat-config.yml](https://github.com/gibby430EN/Elk-Stack-Project1/blob/0bdde45f4ace267ae6ac62057a42ff0e5cd15d82/Ansible/filebeat-config.yml)
 - Metricbeat
-  - [metricbeat-playbook.yml](https://github.com/gibby430EN/Elk-Stack-Project/blob/406aaf08734e1ba97f360f12179a905d7d269358/Ansible/metricbeat-playbook.yml)
-  - [metricbeat-config.yml](https://github.com/gibby430EN/Elk-Stack-Project/blob/406aaf08734e1ba97f360f12179a905d7d269358/Ansible/metricbeat-config.yml)
+  - [metricbeat-playbook.yml](https://github.com/gibby430EN/Elk-Stack-Project1/blob/0bdde45f4ace267ae6ac62057a42ff0e5cd15d82/Ansible/metricbeat-playbook.yml)
+  - [metricbeat-config.yml](https://github.com/gibby430EN/Elk-Stack-Project1/blob/0bdde45f4ace267ae6ac62057a42ff0e5cd15d82/Ansible/metricbeat-config.yml)
 
 These Beats allow us to collect the following information from each machine:
 - Filebeat collects and forwards log data from the web machines it is installed on and sends the data to the Elk stack for processing using elasticsearch. The information in this case is viewed through Kibana.
 
-![Filebeat](https://github.com/gibby430EN/Elk-Stack-Project1/blob/875e64be0f8002c7905581706aa67e8cc26b7360/Images/filebeats1.jpg)
+![Filebeat](https://github.com/gibby430EN/Elk-Stack-Project1/blob/0bdde45f4ace267ae6ac62057a42ff0e5cd15d82/Images/filebeats1.jpg)
 
 - Metricbeat collects metrics from the operationg system and services running on the server. Then sends data to the Elk stack for processing using elasticsearch. This information is also viewed through Kibana.
 
-![metricbeat](https://github.com/gibby430EN/Elk-Stack-Project/blob/406aaf08734e1ba97f360f12179a905d7d269358/Images/metricbeat1.jpg)
+![metricbeat](https://github.com/gibby430EN/Elk-Stack-Project1/blob/0bdde45f4ace267ae6ac62057a42ff0e5cd15d82/Images/metricbeat1.jpg)
 
 ## Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
