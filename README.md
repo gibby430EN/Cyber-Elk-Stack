@@ -2,7 +2,7 @@
 
 The files in this repository were used to configure the network depicted below.
 
-![Newtwork Diagram](https://github.com/gibby430EN/Elk-Stack-Project1/blob/0bdde45f4ace267ae6ac62057a42ff0e5cd15d82/Diagrams/Project1DiagramDark.jpg)
+![Newtwork Diagram](https://github.com/gibby430EN/Elk-Stack-Project1/blob/aa9c03a1a4b36798bfdaae2aff3cfa3df9fb86c4/Diagrams/Project1_v1.1.jpg)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to recreate the deployment pictured above.
   - [my-playbook.yml](https://github.com/gibby430EN/Elk-Stack-Project1/blob/cd14007740467165031f602c13c9ccc1438dfc71/Ansible/my-playbook.yml) Used to set up DVWA Containers
