@@ -106,31 +106,31 @@ SSH into the control node and follow the steps below:
 
 Specific commands the user will need to run to download the playbook, update the files, etc.
 - SSH into JumpBoxProvisioner from Local Desktop:
-	- ssh [username]@{your.jumpbox.IP]
+  - ssh [username]@{your.jumpbox.IP]
 
 - View list of docker containers:
-	- sudo docker container list -a
+  - sudo docker container list -a
 	
 - Start docker:
-	- sudo docker start [dockername]
+  - sudo docker start [dockername]
 	
 - Attach to docker:
-	- sudo docker attach [dockername]
+  - sudo docker attach [dockername]
 	
 - Add DVWAs to hosts file:
-	- nano /etc/ansible/hosts
-	- Add additional private IPs under [webservers]
+  - nano /etc/ansible/hosts
+  - Add additional private IPs under [webservers]
 	
 - Run playbook to update elk:
-	- ansible-playbook /etc/ansible/install-elk.yml
+  - ansible-playbook /etc/ansible/install-elk.yml
 	
 - Copy filebeat configuration file:
-	- copy filebeat-config.yml file to /etc/ansible/files/
-	- copy metricbeat-config.yml file to /etc/ansible/files/
+  - copy filebeat-config.yml file to /etc/ansible/files/
+  - copy metricbeat-config.yml file to /etc/ansible/files/
 	
 - Run playbook for filebeat:
-	-ansible-playbook /etc/ansible/roles/filebeat-playbook.yml
-	-ansible-playbook /etc/ansible/roles/metricbeat-config.yml
+  -ansible-playbook /etc/ansible/roles/filebeat-playbook.yml
+  -ansible-playbook /etc/ansible/roles/metricbeat-config.yml
 	
 - Open Kibana in browser:
-	- http://[your.ELK-VM.External.IP]:5601/app/kibana
+  - http://[your.ELK-VM.External.IP]:5601/app/kibana
