@@ -5,7 +5,7 @@ The files in this repository were used to configure the network depicted below.
 ![Newtwork Diagram](https://github.com/gibby430EN/Elk-Stack-Project1/blob/0bdde45f4ace267ae6ac62057a42ff0e5cd15d82/Diagrams/Project1DiagramDark.jpg)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to recreate the deployment pictured above.
-
+  - [my-playbook.yml]( TODO)
   - [install-elk.yml](https://github.com/gibby430EN/Elk-Stack-Project/blob/9ddd85087a3bd220bf5553780a0b600d25197efd/Ansible/install-elk.yml)
 
 This document contains the following details:
@@ -16,12 +16,11 @@ This document contains the following details:
   - Machines Being Monitored
 - How to Use the Ansible Build
 
-
 ## Description of the Topology
 
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA (Damn Vulnerable Web Application).
 
-Load balancing ensures that the application will be highly stable, in addition to restricting access to the network.
+Load balancing ensures that the application will be highly stable and available, in addition to restricting access to the network.
 - Load balancers protect against DOS attacks by keeping the network traffic balanced. 
 - The advantage of using a Jump-Box-Provisioner is ensuring access to only one or selected administrators.
 
@@ -54,8 +53,8 @@ A summary of the access policies in place can be found in the table below.
 | Name                 | Publicly Accessible | Allowed IP Addresses |
 |----------------------|---------------------|----------------------|
 | Jump-Box-Provisioner | Yes                 | Personal Ip          |
-| Web-1                | No                  | 10.0.0.4, 10.1.0.4   |
-| Web-2                | No                  | 10.0.0.4, 10.1.0.4   |
+| Web-1                | No/Yes through LB   | 10.0.0.4, 10.1.0.4   |
+| Web-2                | No/Yes through LB   | 10.0.0.4, 10.1.0.4   |
 | Elk                  | Yes                 | Personal Ip, 10.0.04 |
 
 ## Elk Configuration
