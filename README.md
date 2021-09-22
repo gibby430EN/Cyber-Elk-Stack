@@ -88,7 +88,7 @@ We have installed the following Beats on these machines:
 
 These Beats allow us to collect the following information from each machine:
 - Filebeat collects and forwards log data from the web machines it is installed on and sends the data to the Elk stack for processing using elasticsearch. The information in this case is viewed through Kibana.
-![Filebeat}(https://github.com/gibby430EN/Elk-Stack-Project/blob/406aaf08734e1ba97f360f12179a905d7d269358/Images/filebeats1.jpg)
+![Filebeat}(https://github.com/gibby430EN/Elk-Stack-Project1/blob/875e64be0f8002c7905581706aa67e8cc26b7360/Images/filebeats1.jpg)
 
 - Metricbeat collects metrics from the operationg system and services running on the server. Then sends data to the Elk stack for processing using elasticsearch. This information is also viewed through Kibana.
 ![metricbeat](https://github.com/gibby430EN/Elk-Stack-Project/blob/406aaf08734e1ba97f360f12179a905d7d269358/Images/metricbeat1.jpg)
