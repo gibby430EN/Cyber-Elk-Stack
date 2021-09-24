@@ -52,10 +52,10 @@ A summary of the access policies in place can be found in the table below.
 
 | Name                 | Publicly Accessible | Allowed IP Addresses |
 |----------------------|---------------------|----------------------|
-| Jump-Box-Provisioner | Yes                 | Personal Ip          |
+| Jump-Box-Provisioner | Yes                 | Personal IP          |
 | Web-1                | No/Yes through LB   | 10.0.0.4, 10.1.0.4   |
 | Web-2                | No/Yes through LB   | 10.0.0.4, 10.1.0.4   |
-| Elk                  | Yes                 | Personal Ip, 10.0.04 |
+| Elk                  | Yes                 | Personal IP, 10.0.04 |
 
 ## Elk Configuration
 
